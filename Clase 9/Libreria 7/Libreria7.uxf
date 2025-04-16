@@ -1,0 +1,54 @@
+<diagram program="umletino" version="15.1"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>793</x><y>299</y><w>325</w><h>208</h></coordinates><panel_attributes>Vehiculo
+--
+- patente: String
+- cantidadRuedas: Byte
+- marca: Marcas
+--
++ getPatente(): String
++ getMarca(): Marca
+# mostrar(): String
++ Vehiculo(String, Byte, Marcas)
+_+ sonIguales(Vehiculo, Vehiculo): boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1287</x><y>351</y><w>91</w><h>182</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Marcas
+--
++ HONDA
++ FORD
++ ZANELLA
++ SCANIA
++ IVECO
++ FIAT</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1105</x><y>364</y><w>208</w><h>39</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>559</x><y>598</y><w>247</w><h>104</h></coordinates><panel_attributes>Auto
+--
+# cantidadAsientos: int
+--
++ Auto(String, Byte, Marcas, int)
++ mostrarAuto(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>819</x><y>598</y><w>286</w><h>104</h></coordinates><panel_attributes>Camion
+--
+# tara: float
+--
++ Camion(String, Byte, Marcas, float)
++ mostrarCamion(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1118</x><y>598</y><w>260</w><h>104</h></coordinates><panel_attributes>Moto
+--
+# cilindrada: float
+--
++ Moto(String, Byte, Marcas, float)
++ mostrarMoto(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>663</x><y>494</y><w>325</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>230;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>949</x><y>494</y><w>39</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>949</x><y>494</y><w>325</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;230;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>221</x><y>273</y><w>338</w><h>299</h></coordinates><panel_attributes>Lavadero
+--
+- vehiculos: ArrayList&lt;Vehiculo&gt;
+- precioAuto: float
+- precioCamion: float
+- precioMoto: float
+--
+- Lavadero()
++ Lavadero(float, float, float)
++ getDetalle(): String
++ getVehiculos(): ArrayList&lt;Vehiculos&gt;
++ mostrarTotalFacturado(): Double
++ mostrarTotalFacturado(Vehiculos): Double
++ sonIguales(Lavadero, Vehiculo): boolean
++ agregar(Vehiculo): boolean
++ remover(Vehiculo): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>546</x><y>299</y><w>273</w><h>39</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>190;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>13</x><y>468</y><w>91</w><h>117</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Vehiculos
+--
++ AUTO
++ MOTO
++ CAMION</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>91</x><y>481</y><w>156</w><h>39</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element></diagram>
